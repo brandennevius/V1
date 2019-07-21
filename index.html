@@ -27,6 +27,13 @@
 
     <div class="About" id="About">
         <h1>.about me </h1>
+        <div class="banner-area">
+          <h2>I am a <span class="type"></span></h2>
+        </div>
+       
+      </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     </div>
     <div class="Experience" id="Experience">
         <h1>.experience</h1>
@@ -49,8 +56,20 @@
         <img src="GitHub-Mark-Light-32px.png" height="20px" width="20px">
     </div>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+    <script>
+      var typed = new Typed(".type", {
+      strings: ["Developer", 
+                "Student"
+              ],
+              typeSpeed: 60,
+              backSpeed: 60,
+              loop: true
+    });
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../V1/typed.js-master/typed.js"></script>
 
     <script>
             function myFunction() {
@@ -63,18 +82,8 @@
             }
             </script>
 
-<script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("myTopnav").style.top = "0";
-          } else {
-            document.getElementById("myTopnav").style.top = "-50px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-        </script>
+
+        
 </body>
 </head>
 
