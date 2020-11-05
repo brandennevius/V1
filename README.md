@@ -1,2 +1,2 @@
 # V1
-Version 1 of website
+Version 1 of personal website
